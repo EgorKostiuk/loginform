@@ -28,10 +28,14 @@ body {
     top: 0;
     width: 50%;
     height: 100%;
-    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.wrapper .form-box.login {
+    left: 0;
+    padding: 0 40px;
 }
 
 .form-box h2 {
@@ -54,6 +58,12 @@ body {
     border: none;
     outline: none;
     border-bottom: 2px solid #fff;
+    transition: .5s;
+}
+
+.input-box input:focus~,
+.input-box input:valid~ {
+    border-bottom-color: #0ef;
 }
 
 .input-box label {
@@ -64,6 +74,13 @@ body {
     font-size: 16px;
     color: #fff;
     pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    color: #0ef;
 }
 
 .input-box i {
@@ -72,6 +89,13 @@ body {
     right: 0;
     transform: translateY(-50%);
     font-size: 18px;
+    color: #fff;
+    transition: .5s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i {
+    color: #0ef;
 }
 
 .btn {
@@ -83,4 +107,24 @@ body {
     outline: none;
     border-radius: 40px;
     cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form-box .logreg-link {
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.logreg-link p a {
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logreg-link p a:hover {
+    text-decoration: underline;
 }
