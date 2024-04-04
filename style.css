@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --main-color: #0ef; /* select color to change the color of the entire project */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -20,8 +24,8 @@ body {
     width: 750px;
     height: 450px;
     background: transparent;
-    border: 2px solid #0ef;
-    box-shadow: 0 0 25px #0ef;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
     overflow: hidden;
 }
 
@@ -109,7 +113,7 @@ body {
 
 .input-box input:focus,
 .input-box input:valid {
-    border-bottom-color: #0ef;
+    border-bottom-color: var(--main-color);
 }
 
 .input-box label {
@@ -126,7 +130,7 @@ body {
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    color: #0ef;
+    color: var(--main-color);
 }
 
 .input-box i {
@@ -141,7 +145,7 @@ body {
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: #0ef;
+    color: var(--main-color);
 }
 
 .btn {
@@ -149,7 +153,7 @@ body {
     width: 100%;
     height: 45px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid var(--main-color);
     outline: none;
     border-radius: 40px;
     cursor: pointer;
@@ -167,7 +171,7 @@ body {
     left: 0;
     width: 100%;
     height: 300%;
-    background: linear-gradient(#081b29, #0ef, #081b29, #0ef);
+    background: linear-gradient(#081b29, var(--main-color), #081b29, var(--main-color));
     z-index: -1;
     transition: .5s;
 }
@@ -184,7 +188,7 @@ body {
 }
 
 .logreg-link p a {
-    color: #0ef;
+    color: var(--main-color);
     text-decoration: none;
     font-weight: 600;
 }
@@ -268,8 +272,8 @@ body {
     right: 0;
     width: 850px;
     height: 600px;
-    background: linear-gradient(45deg, #081b29, #0ef);
-    border-bottom: 3px solid #0ef;
+    background: linear-gradient(45deg, #081b29, var(--main-color));
+    border-bottom: 3px solid var(--main-color);
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
     transition: 1.5s ease;
@@ -288,7 +292,7 @@ body {
     width: 850px;
     height: 700px;
     background: #081b29;
-    border-top: 3px solid #0ef;
+    border-top: 3px solid var(--main-color);
     transform: rotate(0) skewY(0);
     transform-origin: bottom left;
     transition: 1.5s ease;
