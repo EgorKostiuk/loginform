@@ -57,7 +57,20 @@ body {
 .wrapper .form-box.register {
     right: 0;
     padding: 0 40px 0 60px;
-    display: none;
+}
+
+.wrapper .form-box.register .animation {
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+}
+
+.wrapper.active .form-box.register .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
 }
 
 .form-box h2 {
@@ -207,7 +220,20 @@ body {
     left: 0;
     text-align: left;
     padding: 0 150px 60px 40px;
-    display: none;
+    pointer-events: none;
+}
+
+.wrapper .info-text.register .animation {
+    transform: translateX(-121%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+}
+
+.wrapper.active .info-text.register .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
 }
 
 .info-text h2 {
