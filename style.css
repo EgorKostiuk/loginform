@@ -61,8 +61,8 @@ body {
     transition: .5s;
 }
 
-.input-box input:focus~,
-.input-box input:valid~ {
+.input-box input:focus,
+.input-box input:valid {
     border-bottom-color: #0ef;
 }
 
