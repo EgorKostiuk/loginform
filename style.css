@@ -21,6 +21,7 @@ body {
     height: 450px;
     background: transparent;
     border: 2px solid #0ef;
+    overflow: hidden;
 }
 
 .wrapper .form-box {
@@ -177,4 +178,16 @@ body {
 .info-text p {
     font-size: 16px;
     color: #fff;
+}
+
+.wrapper .bg-animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(45deg, #081b29, #0ef);
+    border-bottom: 3px solid #0ef;
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
 }
