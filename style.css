@@ -86,7 +86,7 @@ body {
 
 .form-box h2 {
     font-size: 32px;
-    color: #fff;
+    color: white;
     text-align: center;
 }
 
@@ -103,10 +103,10 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid white;
     padding-right: 24px;
     font-size: 16px;
-    color: #fff;
+    color: white;
     font-weight: 500;
     transition: .5s;
 }
@@ -122,7 +122,7 @@ body {
     left: 0;
     transform: translateY(-50%);
     font-size: 16px;
-    color: #fff;
+    color: white;
     pointer-events: none;
     transition: .5s;
 }
@@ -139,7 +139,7 @@ body {
     right: 0;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #fff;
+    color: white;
     transition: .5s;
 }
 
@@ -158,7 +158,7 @@ body {
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: #fff;
+    color: white;
     font-weight: 600;
     z-index: 1;
     overflow: hidden;
@@ -182,7 +182,7 @@ body {
 
 .form-box .logreg-link {
     font-size: 14.5px;
-    color: #fff;
+    color: white;
     text-align: center;
     margin: 20px 0 10px;
 }
@@ -256,14 +256,14 @@ body {
 
 .info-text h2 {
     font-size: 36px;
-    color: #fff;
+    color: white;
     line-height: 1.3;
     text-transform: uppercase;
 }
 
 .info-text p {
     font-size: 16px;
-    color: #fff;
+    color: white;
 }
 
 .wrapper .bg-animate {
